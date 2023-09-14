@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "patient-sex-at-birth",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth",
+    "version" : "1.0.0",
+    "name" : "PatientSexAtBirth"
+  },
+  {
+    "id" : "PatientInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/PatientInfo",
+    "version" : "1.0.0",
+    "name" : "PatientInfo"
+  },
+  {
+    "id" : "patient-sex-at-birth-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/patient-sex-at-birth-vs",
+    "version" : "1.0.0",
+    "name" : "PatientSexAtBirthVS"
+  }
+]

@@ -1,0 +1,5 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-my-ig.json	2489	-	0	0	0	0	0	0	5	412	0	0	0	0	0	0	0	1	0	0	86	184	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-PatientInfo.json	4842	207	0	0	0	1	0	437	0	430	0	0	0	0	0	0	0	0	0	0	44	1447	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-patient-sex-at-birth.json	1641	11	0	0	0	0	0	0	0	24	0	1	0	0	0	0	0	0	0	0	15	1481	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-patient-sex-at-birth-vs.json	440	8	0	0	0	0	0	0	1	86	0	0	0	0	0	0	0	0	0	0	7	4984	0	0	0	0	0	0

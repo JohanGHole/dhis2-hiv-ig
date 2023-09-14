@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "patient-sex-at-birth-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://example.com/fhir/example/ValueSet/patient-sex-at-birth-vs",
+  "version" : "1.0.0",
+  "name" : "PatientSexAtBirthVS",
+  "title" : "Patient Sex at Birth Value Set",
+  "status" : "active",
+  "date" : "2023-09-14T09:05:05+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "patient sex at birth value set.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth"
+    }]
+  }
+}

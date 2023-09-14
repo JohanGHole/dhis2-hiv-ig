@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "1d6061bf-624c-455b-88fb-cb370b1c42f5",
+  "meta" : {
+    "lastUpdated" : "2023-09-14T09:05:05.995+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/patient-sex-at-birth-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-patient-sex-at-birth.html\">codesystem Patient Sex at Birth v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-patient-sex-at-birth-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-male\">male</a></td><td>http://example.com/fhir/example/CodeSystem/patient-sex-at-birth</td><td>Male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-patient-sex-at-birth-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-female\">female</a></td><td>http://example.com/fhir/example/CodeSystem/patient-sex-at-birth</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-patient-sex-at-birth-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-other\">other</a></td><td>http://example.com/fhir/example/CodeSystem/patient-sex-at-birth</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-patient-sex-at-birth-unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-unknown\">unknown</a></td><td>http://example.com/fhir/example/CodeSystem/patient-sex-at-birth</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/patient-sex-at-birth-vs",
+      "version" : "1.0.0",
+      "name" : "PatientSexAtBirthVS",
+      "title" : "Patient Sex at Birth Value Set",
+      "status" : "active",
+      "date" : "2023-09-14T09:05:05+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c7f8ea21-ef33-4f32-86eb-a8195638c185",
+        "timestamp" : "2023-09-14T09:05:19+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth",
+          "code" : "female",
+          "display" : "Female"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth",
+          "code" : "other",
+          "display" : "Other"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/patient-sex-at-birth",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  }]
+}

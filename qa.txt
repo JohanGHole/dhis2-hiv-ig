@@ -1,0 +1,39 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 8, warn = 9, info = 5
+IG Publisher Version: 1.4.5
+Generated Thu Sep 14 09:05:28 UTC 2023. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 6 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-patient-sex-at-birth : 0 / 2 / 6
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientInfo : 5 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-patient-sex-at-birth-vs : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: PatientInfo.countryOfBirth: The reference urn:iso:std:iso:3166 could not be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-patient-sex-at-birth.json ==
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[0].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[1].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[2].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[3].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/patient-sex-at-birth: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/patient-sex-at-birth: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/StructureDefinition-PatientInfo.json ==
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot.element[10].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.differential.element[10].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.differential.element[10].binding: The valueSet reference urn:iso:std:iso:3166 on element PatientInfo.countryOfBirth points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot.element[10].binding: The valueSet reference urn:iso:std:iso:3166 on element PatientInfo.countryOfBirth points to something that is not a value set (CodeSystem)
+== fsh-generated/resources/ValueSet-patient-sex-at-birth-vs.json ==
+WARNING: ValueSet/patient-sex-at-birth-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
